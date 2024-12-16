@@ -9,7 +9,10 @@
         "jfc-mvc/lib/mybatis-3.5.16.jar",
         "jfc-mvc/lib/mysql-connector-j-9.1.0.jar",
         "jfc-mvc/lib/ognl-3.4.2.jar",
+<<<<<<< HEAD
         "jfc-mvc/lib/openpdf-2.0.3.jar",
+=======
+>>>>>>> 797ff23aeb0406db82a84c10a652d4c59f02e565
         "jfc-mvc/lib/reload4j-1.2.25.jar",
         "jfc-mvc/lib/slf4j-api-2.0.12.jar"
     ]

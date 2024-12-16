@@ -5,8 +5,11 @@ import javax.swing.*;
 
 import model.User;
 import model.UserMapper;
+<<<<<<< HEAD
 import view.UserPdf;
 import view.UserView;
+=======
+>>>>>>> 797ff23aeb0406db82a84c10a652d4c59f02e565
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,6 +19,7 @@ import org.apache.ibatis.session.*;
 public class UserController {
     private UserView view;
     private UserMapper mapper;
+<<<<<<< HEAD
     private UserPdf pdf;
     private SqlSession session;
 
@@ -23,11 +27,21 @@ public class UserController {
         this.view = view;
         this.mapper = mapper;
         this.pdf = pdf;
+=======
+    private SqlSession session;
+
+    public UserController(UserView view, UserMapper mapper, SqlSession session){
+        this.view = view;
+        this.mapper = mapper;
+>>>>>>> 797ff23aeb0406db82a84c10a652d4c59f02e565
         this.session = session;
 
         this.view.addAddUserListener(new AddUserListener());
         this.view.addRefreshUserListener(new RefreshListener());
+<<<<<<< HEAD
         this.view.addExportListener(new ExportListener());
+=======
+>>>>>>> 797ff23aeb0406db82a84c10a652d4c59f02e565
     }
 
     class AddUserListener implements ActionListener{
@@ -58,6 +72,7 @@ public class UserController {
             view.setUserList(userArray);
         }
     }
+<<<<<<< HEAD
 
     class ExportListener implements ActionListener{
         @Override
@@ -67,3 +82,6 @@ public class UserController {
         }
     }
 }
+=======
+}
+>>>>>>> 797ff23aeb0406db82a84c10a652d4c59f02e565
